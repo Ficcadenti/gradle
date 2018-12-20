@@ -1,0 +1,17 @@
+import java.text.SimpleDateFormat
+SimpleDateFormat sdf=new SimpleDateFormat("HH:mm:ss")
+task proviamoGradle {
+	for(int i=1;i<10;i++)
+	{
+		if(i%2==0)
+		{
+			System.out.printf("il numero %d è pari !!!\n",i);
+		}
+		else
+		{
+			System.out.printf("il numero %d è dispari !!!\n",i);
+		}
+	}
+	System.out.printf("Elaborazione terminata alle: %s",sdf.format(new Date()));
+	
+}
